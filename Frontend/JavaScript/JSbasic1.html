@@ -13,23 +13,19 @@
     <button onclick="reverseFruits()">Reverse List</button>
 
     <script>
-        // Initial fruits array
         const fruits = ['Apple', 'Banana', 'Cherry', 'Orange'];
-
         // Function to display fruits
         function displayFruits() {
             const getParaElement = document.getElementById("fruits_display");
             const joinedFruits = fruits.join(", ");
             getParaElement.textContent = joinedFruits;
         }
-
         // Display the initial list of fruits
         displayFruits();
-
-        // Function to reverse the fruits list and update the display
+        // Function to reverse the list
         function reverseFruits() {
-            fruits.reverse(); // Reverse the array
-            displayFruits();  // Update the display
+            fruits.reverse();
+            displayFruits();
         }
     </script>
 </body>
