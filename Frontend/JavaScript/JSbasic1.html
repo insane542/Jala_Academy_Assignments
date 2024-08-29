@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Fruits List</title>
+</head>
+<body>
+    <h2>Q2. Create an array consisting of fruits names and when we click on a button sort it in descending order.</h2>
+    <p id="fruits_display"></p>
+    <p>Click on the button below to reverse the list of fruits:</p>
+    <!-- Button to reverse the list -->
+    <button onclick="reverseFruits()">Reverse List</button>
+
+    <script>
+        // Initial fruits array
+        const fruits = ['Apple', 'Banana', 'Cherry', 'Orange'];
+
+        // Function to display fruits
+        function displayFruits() {
+            const getParaElement = document.getElementById("fruits_display");
+            const joinedFruits = fruits.join(", ");
+            getParaElement.textContent = joinedFruits;
+        }
+
+        // Display the initial list of fruits
+        displayFruits();
+
+        // Function to reverse the fruits list and update the display
+        function reverseFruits() {
+            fruits.reverse(); // Reverse the array
+            displayFruits();  // Update the display
+        }
+    </script>
+</body>
+</html>
