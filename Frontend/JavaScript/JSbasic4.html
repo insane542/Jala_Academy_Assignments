@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Variable Hoisting in JavaScript</h2>
+    <p id="hoisting_example"></p>
+
+    <script>
+        // Using the variable before its declaration
+        document.getElementById('hoisting_example').textContent = "The value of x is: " + x;
+
+        var x = 10;
+        // Now The value of x is: 10
+        console.log("The value of x is:", x); 
+    </script>
+</body>
+</html>
