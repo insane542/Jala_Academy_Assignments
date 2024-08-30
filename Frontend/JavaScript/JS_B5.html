@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Adding properties with object prototype</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, gender) {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.gender = gender
+        }
+
+        Person.prototype.occupation = "Scientist";
+
+        const myself = new Person("Mihir", "Mane", 22, "Male");
+        document.getElementById("demo").innerHTML = "I am a " + myself.occupation;
+    </script>
+</body>
+</html>

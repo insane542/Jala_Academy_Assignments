@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        p {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Program using Javascript</h1>
+    
+    <p>Counter Value: <span id="counter">0</span></p>
+    <button onclick="incrementCounter()">Count</button>
+
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++; //Increase count onClick
+            document.getElementById("counter").innerText = count; //Display
+        }
+    </script>
+</body>
+</html>

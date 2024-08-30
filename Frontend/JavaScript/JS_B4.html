@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        p {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Using Getter and Setter</h1>
+    
+    <p>Counter Value: <span id="counter">0</span></p>
+    <button onclick="counter.increment()">Increment</button>
+    <button onclick="counter.decrement()">Decrement</button>
+
+    <script>
+        const counter = {
+            count: 0,
+            // Getter 
+            get value() {
+                return this.count;
+            },
+            // Setter
+            set value(newValue) {
+                this.count = newValue;
+                document.getElementById("counter").innerText = this.count;
+            },
+
+            increment() {
+                this.value = this.count + 1; // Calls the setter
+            },
+            decrement() {
+                this.value = this.count - 1; // Calls the setter
+            }
+        };
+
+        counter.value = 0; //Initializes and triggers setter
+    </script>
+</body>
+</html>

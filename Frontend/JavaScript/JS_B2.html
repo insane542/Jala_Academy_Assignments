@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript call() and apply() function working</h1>
+    <p id="result1"></p>
+    <p id="result2"></p>
+
+    <script>
+        const person = {
+            fullName: function(city, country) {
+                return this.firstName + " " + this.lastName + " from " + city + ", " + country;
+            }
+        };
+
+        const person1 = {
+            firstName: "Steve",
+            lastName: "Rogers"
+        };
+        const person2 = {
+            firstName: "Peggy",
+            lastName: "Carter"
+        };
+
+        // Using call() method
+        const result1 = person.fullName.call(person1, "New York", "USA");
+        // Using apply() method
+        const result2 = person.fullName.apply(person2, ["London", "UK"]);
+
+        document.getElementById("result1").innerHTML = result1;
+        document.getElementById("result2").innerHTML = result2;
+    </script>
+</body>
+</html>
