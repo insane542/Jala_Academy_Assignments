@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q2. Write a program with FOR/IN loop.</h2>
+    <p id="para_element"></p>
+
+    <script>
+        const car = {make: "BMW", model: "M3 GTR", year: 2001, color: "Silver"};
+        //Get id of paragraph
+        const displayElement = document.getElementById("para_element");
+        let result = "";
+        //Loop Car inside For Loop using Key-Value
+        for (let key in car) {
+            result = `${key}: ${car[key]}<br>`;
+        }
+
+        displayElement.innerHTML = result;
+    </script>
+</body>
+</html>

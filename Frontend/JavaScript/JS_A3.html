@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q3. Create an object "person" with properties firstname and lastname. Display these properties using 2 different ways of accessing.</h2>
+    <p id="element_display"></p>
+
+    <script>
+        const person = {firstname: "Mihir", lastname: "Mane"};
+        //Using the Dot and Bracket accessing method to display
+        const fullname_dot = person.firstname + " " + person.lastname;
+        const fullname_bracket = person["firstname"] + " " + person["lastname"];
+
+        document.getElementById("element_display").innerHTML = "Dot Notation: " + fullname_dot + "<br>" + "Bracket Notation: " + fullname_bracket;
+    </script>
+</body>
+</html>
