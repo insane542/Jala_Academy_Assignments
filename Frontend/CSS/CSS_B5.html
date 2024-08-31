@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Image Backgrounds</title>
+    <style>
+        
+        #container {
+            position: relative;
+            padding: 50px;
+            width: 100%;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        #container img {
+            position: absolute;
+            z-index: -1; /* Make sure the images are behind the content */
+        }
+
+        /* First image */
+        #image1 {
+            
+            bottom: 0;
+            width: 1080px;
+            height: 500px;
+        }
+
+        /* Second image */
+        #image2 {
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+        }
+        #container h1, p {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiple Image Backgrounds with Adjustable Sizes</h1>
+
+    <div id="container">
+        <img id="image1" src="CSS_B5a.jpg" alt="Background Image 1">
+        <img id="image2" src="CSS_B5b.jpg" alt="Background Image 2">
+        
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+</body>
+</html>

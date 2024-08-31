@@ -1,0 +1,20 @@
+table {
+    margin: 25px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+table:hover {
+    background-color: aliceblue;
+}
+
+body:hover {
+    background-color: rgb(123, 237, 237);
+}
