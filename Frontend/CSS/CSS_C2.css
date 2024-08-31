@@ -1,0 +1,49 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pagination */
+.pagination {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 2px 14px;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+/* Hover effect pagination */
+.pagination a:hover {
+    background-color: #dddddda2;
+    border-radius: 5px;
+}
+
+/* Pagination without spaces (no padding) */
+.pagination-no-space a {
+    padding: 2px;
+    margin-right: 2px;
+}
+
+.pagination-no-space a:hover {
+    background-color: #dddddda2;
+    border-radius: 3px;
+}
