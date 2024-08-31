@@ -1,0 +1,21 @@
+.image-box {
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.image-box:hover {
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    text-align: center;
+}
