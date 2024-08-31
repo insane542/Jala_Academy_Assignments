@@ -1,0 +1,52 @@
+.static-box {
+    border: 4px solid lightblue;
+    padding: 10px;
+    margin: 10px;
+    position: static;
+    width: fit-content;
+    height: 100px;
+}
+
+.relative-box {
+    border: 4px solid lightgreen;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    position: relative;
+    top: 20px; 
+    left: 20px; 
+    height: 100px;
+}
+
+.fixed-box {
+    border: 4px solid rgb(74, 214, 134);
+    padding: 10px;
+    margin: 10px;
+    position: fixed;
+    top: 50px; 
+    right: 10px; 
+    width: 150px;
+    height: 100px;
+}
+
+.absolute-box {
+    border: 4px solid rgb(227, 227, 146);
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+    width: 300px;
+    height: 100px;
+}
+
+.sticky-box {
+    border: 4px solid lightpink;
+    padding: 10px;
+    margin: 10px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    width: 500px;
+    height: 100px;
+}
