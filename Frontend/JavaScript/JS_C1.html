@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            border: none;
+            padding: 15px 22px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Listener to a button to show date</h2>
+    <button id="btn">Date and Time</button>
+    <p id="para"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", displayDate)
+
+        function displayDate() {
+            document.getElementById("para").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>
