@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Check</title>
+</head>
+<body onload="checkCookie()">
+
+    <script>
+        function setCookie(name, value, days) {
+            
+            let date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+
+            let expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            let cookieArr = document.cookie.split(';');
+
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookie = cookieArr[i].trim();
+
+                if (cookie.indexOf(name + "=") == 0) {
+                    return cookie.substring(name.length + 1, cookie.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let username = getCookie("username");
+
+            if (username != "") {
+                alert("Welcome back, " + username + "!");
+            } else {
+                username = prompt("Please enter your name:", "");
+
+                if (username != "" && username != null) {
+                    setCookie("username", username, 30);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

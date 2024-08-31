@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access JSON Object</title>
+</head>
+<body>
+
+    <h2>Accessing JSON Object with Dot Notation</h2>
+    <p id="jsonData"></p>
+
+    <script>
+        const person = {
+            name: "Mihir Mane",
+            age: 22,
+            gender: "Male",
+        };
+
+        const name = person.name;
+        const age = person.age;
+        const city = person.gender;
+
+        document.getElementById("jsonData").innerHTML = 
+            `Name: ${name}<br>Age: ${age}<br>City: ${city}`;
+    </script>
+
+</body>
+</html>
