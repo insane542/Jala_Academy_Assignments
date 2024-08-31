@@ -1,0 +1,13 @@
+.scroll-box {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #000;
+    padding: 10px;
+    overflow: auto;
+}
+
+.content {
+    height: 400px;  
+    width: 500px;
+    background-color: lightblue;
+}
