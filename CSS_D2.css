@@ -1,0 +1,15 @@
+ol.orderedlist1 {
+    list-style-type: upper-roman;
+}
+
+ol.orderedlist2 {
+    list-style-type: lower-alpha;
+}
+
+ul.unorderedlist1 {
+    list-style-type: circle;
+}
+
+ul.unorderedlist2 {
+    list-style-type: square;
+}
