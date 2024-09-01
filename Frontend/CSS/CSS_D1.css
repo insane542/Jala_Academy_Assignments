@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+.table1 {
+    width: 235px;
+    table-layout: fixed;
+}
+
+.table2 {
+    table-layout: auto;
+    width: 100!;
+}
